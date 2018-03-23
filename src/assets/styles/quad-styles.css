@@ -44,4 +44,11 @@ html { overflow: hidden;}
   .ui-menubar .ui-menubar-root-list>.ui-menuitem>.ui-menuitem-link {padding: 10px 20px; border-radius: 30px; font-size: 14px;}
   .ui-menubar .ui-menuitem > .ui-menuitem-link:hover {background-color: #d02139 !important;}
 
-  app-mid-body { background-color: red; width:100%; float:left; height:300px; margin-top: 100px;}
+  app-mid-body {  width:100%; float:left; height:auto; margin-top: 100px;}
+
+
+  /* Tabview styles============================================= */
+  .ui-tabview .ui-tabview-nav > li.ui-state-active { background-color:#d02139 !important; border:none; transition: ease-in-out .5s; }
+  .ui-state-active a { color: #fff !important;}
+  .ui-tabview .ui-tabview-nav li a { padding: 1rem 1.5rem}
+  .ui-tabview-nav, .ui-tabview { padding: 0px !important;}
