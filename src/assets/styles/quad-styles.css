@@ -1,5 +1,6 @@
 
-body, .ui-widget { font-family: 'Poppins', sans-serif !important;}
+
+body, .ui-widget { font-family: poppins !important;}
 html { overflow: hidden;}
 
 /* Container styles ======================================================================*/
@@ -8,7 +9,6 @@ html { overflow: hidden;}
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;}
-
 
 @media (min-width: 576px) {
     .quad-container {
@@ -64,3 +64,26 @@ html { overflow: hidden;}
 .siteTable input{width: 100%; padding: 5px;}
 .siteTable .search-input .search-icon{position: absolute;right: 15px;top: 8px;;}
 .siteTable .ui-widget-header{background:#fff;border: none;padding: 10px 0; }
+
+
+
+  /* Tabview styles============================================= */
+  .ui-tabview .ui-tabview-nav > li.ui-state-active { background-color:#d02139 !important; border:none; transition: ease-in-out .5s; }
+  .ui-state-active a { color: #fff !important;}
+  .ui-tabview .ui-tabview-nav li a { padding: 1rem 1.5rem}
+  .ui-tabview-nav, .ui-tabview { padding: 0px !important;}
+
+
+  /* ---------login page ----------------- */
+
+  .login {
+    border: 1px solid #d2d2d2;
+    width: 450px;
+    border-radius: 2px;
+    padding: 35px 25px;
+    margin: 0px auto;
+        margin-top: 0px;
+    margin-top: 10%;
+}
+.login img{width: 150px;}
+.login-submit button{display: block;width: 100%;border-radius: 0;}
