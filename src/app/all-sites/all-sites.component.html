@@ -1,0 +1,38 @@
+
+<div class="siteTable">
+    <p-table [value]="sales">
+        <ng-template pTemplate="caption">
+            <div class="ui-g">
+            <div class="ui-g-12 ui-md-6 ui-lg-5 search-input">        
+                <!-- <input type="text" pInputText size="50" placeholder="Global Filter">
+                <i class="fa fa-search search-icon"></i> -->
+              <h5 class="page-heading">All sites</h5>
+            </div>
+            <div  class="ui-g-12 ui-md-6 ui-lg-7 padding-zero text-right">
+                <button pButton type="button" class="ui-button-secondary">Import CSV</button>
+                <button pButton type="button" class="ui-button-secondary">Add Site</button>
+            </div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th width="30%">Site</th>
+                <th width="14%">City</th>
+                <th width="14%">State</th>
+                <th width="14%">Units</th>
+                <th width="14%">Managers</th>
+                <th width="14%">Tanants</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-sale>
+            <tr>
+                <td width="30%">{{sale.site}}</td>
+                <td width="14%">{{sale.city}}</td>
+                <td width="14%">{{sale.state}}</td>
+                <td width="14%">{{sale.units}}</td>
+                <td width="14%">{{sale.managers}}</td>
+                <td width="14%">{{sale.tanants}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
