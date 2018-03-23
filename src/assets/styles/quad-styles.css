@@ -1,5 +1,6 @@
 
-body, .ui-widget { font-family: poppins !important;}
+body, .ui-widget { font-family: poppins !important; font-size: 14px;}
+.ui-tabview-nav { font-size: 16px;}
 html { overflow: hidden;}
 
 /* Container styles ======================================================================*/
@@ -52,3 +53,10 @@ html { overflow: hidden;}
   .ui-state-active a { color: #fff !important;}
   .ui-tabview .ui-tabview-nav li a { padding: 1rem 1.5rem}
   .ui-tabview-nav, .ui-tabview { padding: 0px !important;}
+  .ui-tabview-panel { padding: 0px !important; margin-top: 20px; }
+  .ui-datatable .ui-datatable-data>tr>td, .ui-datatable .ui-datatable-thead>tr>th{ padding: 1rem .5rem;}
+  .ql-search { padding: 1rem 1rem !important;}
+  .ui-widget input { height: 34px; padding: 6px 10px; font-family:poppins; border: solid 1px #d2d2d2; }
+
+  p-dialog input, .ui-dropdown { width: 100% !important;}
+ 

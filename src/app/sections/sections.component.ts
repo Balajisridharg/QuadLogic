@@ -9,23 +9,49 @@ export class SectionsComponent implements OnInit {
 
   constructor() { }
   items: any[];
+  cities: any[];
+  display: boolean = false; 
+  selectedCity: any;
+ 
 
   ngOnInit() {
     this.items = [
-      {"brand": "VW", "year": 2012, "color": "Orange",},
-                {"brand": "Audi", "year": 2011, "color": "Black"},
-                {"brand": "Renault", "year": 2005, "color": "Gray"},
-                {"brand": "BMW", "year": 2003, "color": "Blue"},
-                {"brand": "Mercedes", "year": 1995, "color": "Orange"},
-                {"brand": "Volvo", "year": 2005, "color": "Black"},
-                {"brand": "Honda", "year": 2012, "color": "Yellow"},
-                {"brand": "Jaguar", "year": 2013, "color": "Orange"},
-                {"brand": "Ford", "year": 2000, "color": "Black"},
-                {"brand": "Fiat", "year": 2013, "color": "Red"},
-                {"brand": "VW", "year": 2012, "color": "Orange"},
+      {"brand": "VW", "section": "Sewage Rate", "color": "Orange",},
+                {"brand": "Audi", "section": "Section C1", "color": "Black"},
+                {"brand": "Renault", "section": "Section RA", "color": "Gray"},
+                {"brand": "BMW", "section": "Water Rate", "color": "Blue"},
+                {"brand": "Mercedes", "section": "Gas Rate", "color": "Orange"},
+                {"brand": "Volvo", "section": 2005, "color": "Black"},
+                {"brand": "Honda", "section": 2012, "color": "Yellow"},
+                {"brand": "Jaguar", "section": 2013, "color": "Orange"},
+                {"brand": "Ford", "section": 2000, "color": "Black"},
+                {"brand": "Fiat", "section": 2013, "color": "Red"},
+                {"brand": "VW", "section": 2012, "color": "Orange"},
               
 
     ];
+    this.cities = [{label:'Select City', value:null},
+    {label:'New York', value:{id:1, name: 'New York', code: 'NY'}},
+    {label:'Rome', value:{id:2, name: 'Rome', code: 'RM'}},
+    {label:'London', value:{id:3, name: 'London', code: 'LDN'}},
+    {label:'Istanbul', value:{id:4, name: 'Istanbul', code: 'IST'}},
+    {label:'Paris', value:{id:5, name: 'Paris', code: 'PRS'}}];
   }
 
+ 
+
+
+
+    showDialog() {
+        this.display = true;
+    }
+
+
+  handleClick() {
+    //execute action
+}
+
+ 
+
+ 
 }
