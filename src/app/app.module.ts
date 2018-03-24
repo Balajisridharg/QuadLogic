@@ -29,6 +29,7 @@ import {DataTableModule} from 'primeng/datatable';
 import { SitesComponent } from './sites/sites.component';
 import { SectionsComponent } from './sections/sections.component';
 import { RouterModule } from '@angular/router';
+import { OverviewComponent } from './overview/overview.component';
 
 
 
@@ -40,7 +41,8 @@ import { RouterModule } from '@angular/router';
     AllSitesComponent,
     LoginPageComponent,
     SitesComponent,
-    SectionsComponent
+    SectionsComponent,
+    OverviewComponent
   ],
   imports: [
 

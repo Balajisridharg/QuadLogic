@@ -1,0 +1,9 @@
+.ql-site-building { width: 140px; height: auto; float: left; }
+.ql-ovv-site-titles { float: left; margin-left: 20px; }
+.ql-ovv-site-titles label {  font-size: 16px; font-weight: bold; margin-top: 20px; float: left; width:100%;}
+.ql-ovv-site-titles p { margin-top: 12px; float: left; }
+.ql-ovv-site-cont { border:solid 1px #d2d2d2; width:100%; height:auto; float:left;}
+.ql-ovv-edit { color: #d2d2d2; font-size: 20px; float: right; margin: 10px 20px; cursor: pointer }
+.ql-ovv-user-title { font-size: 18px; float: left; }
+
+.ql-ovv-users-search-cont {width:100%; background:none; border:none; text-align:right; padding:1rem 0px !important; }
