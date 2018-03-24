@@ -30,6 +30,8 @@ import { SitesComponent } from './sites/sites.component';
 import { SectionsComponent } from './sections/sections.component';
 import { RouterModule } from '@angular/router';
 import { OverviewComponent } from './overview/overview.component';
+import { TenantsComponent } from './tenants/tenants.component';
+import { MetersComponent } from './meters/meters.component';
 
 
 
@@ -42,7 +44,9 @@ import { OverviewComponent } from './overview/overview.component';
     LoginPageComponent,
     SitesComponent,
     SectionsComponent,
-    OverviewComponent
+    OverviewComponent,
+    TenantsComponent,
+    MetersComponent
   ],
   imports: [
 

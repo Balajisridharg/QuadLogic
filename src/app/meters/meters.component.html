@@ -1,35 +1,30 @@
-<div class="ui-g-nopad ql-ovv-site-cont" >
-  <img class="ql-site-building" src="../assets/images/building.jpg" alt="">
-  <div class="ql-ovv-site-titles">
-    <label>Parkside Site Overview</label>
-    <p><i class="fa fa-map-marker"></i> Block - A, Revenue Layout, Madhurawada, Visakhapatnam - 5300041</p>
-</div>
-<i class="fa fa-pencil ql-ovv-edit"></i>
-</div>
-
-
 
 <div style="width:100%; float:left; height:auto">
-<div class="ui-widget-header ql-search ql-ovv-users-search-cont">
+  <div class="ui-widget-header ql-search ql-ovv-users-search-cont">
+    
+   
+    <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
   
-  <label class="ql-ovv-user-title">All Users</label>
-  <!-- <i class="fa fa-search" style="margin:4px 4px 0 0"></i> -->
-
-  <!-- <p-dropdown [options]="cities1" [group]="true" class="float-left" ></p-dropdown> -->
-  <input #gb type="text" pInputText size="50" placeholder="Search...">
-  <button type="button" (click)="showDialog()" pButton >  Add User</button>
+    <!-- <p-dropdown [options]="cities1" [group]="true" class="float-left" ></p-dropdown> -->
+    <input #gb type="text" pInputText size="50" placeholder="Search...">
+    <p-fileUpload mode="basic" name="demo[]"   maxFileSize="1000000" (onUpload)="onBasicUpload($event)"></p-fileUpload>
+    <button type="button" (click)="showDialog()" pButton style="float:right;">  Add User</button>
+    </div>
+    
+  
+  
+  <p-dataTable [value]="items" scrollable="true" [rows]="5" [globalFilter]="gb" #dt >
+    <p-column field="virtual" header="Virtual Meter ID" [sortable]="true"></p-column>
+    <p-column field="meterid" header="Meter ID" [sortable]="true"></p-column>
+    <p-column field="multiplier" header="Multiplier" [sortable]="true"></p-column>
+    <p-column field="units" header="Units" [sortable]="true"></p-column> 
+    <p-column field="utility" header="Utility Type" [sortable]="true"></p-column> 
+    
+  </p-dataTable>
+  
   </div>
   
-
-
-<p-dataTable [value]="items" scrollable="true" [rows]="5" [globalFilter]="gb" #dt >
-  <p-column field="username" header="Users" [sortable]="true"></p-column>
-  <p-column field="emailaddress" header="Email ID" [sortable]="true"></p-column>
-  <p-column field="roles" header="Role" [sortable]="true"></p-column>
-  <p-column field="actions" header="Actions" [sortable]="true"></p-column> 
-</p-dataTable>
-
-</div>
+  
 
 
 
