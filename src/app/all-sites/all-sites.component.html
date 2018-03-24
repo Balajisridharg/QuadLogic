@@ -8,9 +8,9 @@
                 <i class="fa fa-search search-icon"></i> -->
               <h5 class="page-heading">All sites</h5>
             </div>
-            <div  class="ui-g-12 ui-md-6 ui-lg-7 padding-zero text-right">
-                <button pButton type="button" class="ui-button-secondary">Import CSV</button>
-                <button pButton type="button" class="ui-button-secondary">Add Site</button>
+            <div  class="ui-g-12 ui-md-6 ui-lg-7 padding-zero text-right site-buttons">
+                <button pButton type="button" icon="fas fa-upload" label="Import CSV" class="ui-button-secondary">Import CSV</button>
+                <button pButton type="button" icon="fal fa-plus" label="Add Site" (click)="showDialog()" class="ui-button-secondary">Add Site</button>
             </div>
             </div>
         </ng-template>
@@ -26,13 +26,38 @@
         </ng-template>
         <ng-template pTemplate="body" let-sale>
             <tr>
-                <td width="30%">{{sale.site}}</td>
+                <td width="30%"><b>{{sale.address}}</b>{{sale.site}}</td>
                 <td width="14%">{{sale.city}}</td>
                 <td width="14%">{{sale.state}}</td>
                 <td width="14%">{{sale.units}}</td>
                 <td width="14%">{{sale.managers}}</td>
-                <td width="14%">{{sale.tanants}}</td>
+                <td width="14%" class="split-button">{{sale.tanants}}<p-splitButton class="site-edit float-right" icon="far fa-ellipsis-v"  [model]="items"></p-splitButton></td>
             </tr>
         </ng-template>
     </p-table>
+    <!-- <p-growl [value]="msgs"></p-growl> -->
+    <!-- <p-splitButton label="Save" icon="fa-check" [model]="items" styleClass="ui-button-danger"></p-splitButton> -->
 </div>
+<form>
+<p-dialog header="Tanants names" [(visible)]="display" modal="modal" [responsive]="true" [width]="350" [minWidth]="200" [minY]="70">
+    
+        <span class="forn-group">
+            <h3 class="first login-label">Site Title</h3>
+            <input class="login-input" id="input" type="text" size="30" pInputText placeholder="Enter your title"> 
+        </span>
+        <span class="forn-group">
+            <h3 class="first login-label">Address 1</h3>
+            <input id="input" class="login-input" pPassword type="text" size="30" pInputText placeholder="Enter your Address"> 
+        </span>
+        <span class="forn-group">
+            <h3 class="first login-label">Address 2</h3>
+            <input id="input" class="login-input" pPassword type="text" size="30" pInputText placeholder="Enter your Address"> 
+        </span>
+  
+        <p-footer class="">
+            <button type="button" pButton class="ui-button-secondary"  (click)="display=false" label="close">close</button>
+            <button type="button" pButton class="ui-button btn-orange"  (click)="display=false" label="Save changes">Save changes</button>
+        </p-footer>
+        
+</p-dialog>
+</form>
