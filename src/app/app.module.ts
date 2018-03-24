@@ -32,10 +32,6 @@ import { SitesComponent } from './sites/sites.component';
 import { SectionsComponent } from './sections/sections.component';
 import { RouterModule } from '@angular/router';
 import { OverviewComponent } from './overview/overview.component';
-<<<<<<< HEAD
-=======
-
->>>>>>> 61fcc4498e3494261192ec58c9f92dbf5fbd3351
 
 
 @NgModule({
