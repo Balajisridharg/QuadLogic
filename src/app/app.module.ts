@@ -1,6 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
+
+
+import {DialogModule} from 'primeng/dialog';
+import {FileUploadModule} from 'primeng/fileupload';
+import {DropdownModule} from 'primeng/dropdown';
+
+
 import { AppComponent } from './app.component';
 
 import {MenubarModule} from 'primeng/menubar';
@@ -34,7 +42,8 @@ import { SectionsComponent } from './sections/sections.component';
     SectionsComponent
   ],
   imports: [
-    BrowserModule,BrowserAnimationsModule, MenubarModule,TableModule,AccordionModule,ButtonModule,DataTableModule,TabViewModule,InputTextModule
+
+    BrowserModule,BrowserAnimationsModule, MenubarModule,TableModule,AccordionModule,ButtonModule,DataTableModule,TabViewModule,InputTextModule,DialogModule,FileUploadModule,DropdownModule
 
   ],
   providers: [],
