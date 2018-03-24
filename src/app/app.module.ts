@@ -22,12 +22,13 @@ import { HeaderComponent } from './header/header.component';
 import { MidBodyComponent } from './mid-body/mid-body.component';
 import { AllSitesComponent } from './all-sites/all-sites.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-
+import {SplitButtonModule} from 'primeng/splitbutton';
 import {TabViewModule} from 'primeng/tabview';
 import {DataTableModule} from 'primeng/datatable';
 
 import { SitesComponent } from './sites/sites.component';
 import { SectionsComponent } from './sections/sections.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -43,7 +44,9 @@ import { SectionsComponent } from './sections/sections.component';
   ],
   imports: [
 
-    BrowserModule,BrowserAnimationsModule, MenubarModule,TableModule,AccordionModule,ButtonModule,DataTableModule,TabViewModule,InputTextModule,DialogModule,FileUploadModule,DropdownModule
+    BrowserModule,BrowserAnimationsModule,RouterModule.forRoot([]),
+    MenubarModule,TableModule,AccordionModule,ButtonModule,DataTableModule,
+    TabViewModule,InputTextModule,DialogModule,FileUploadModule,DropdownModule,SplitButtonModule
 
   ],
   providers: [],
