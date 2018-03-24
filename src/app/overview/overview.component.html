@@ -1,0 +1,66 @@
+<div class="ui-g-nopad ql-ovv-site-cont" >
+  <img class="ql-site-building" src="../assets/images/building.jpg" alt="">
+  <div class="ql-ovv-site-titles">
+    <label>Parkside Site Overview</label>
+    <p><i class="fa fa-map-marker"></i> Block - A, Revenue Layout, Madhurawada, Visakhapatnam - 5300041</p>
+</div>
+<i class="fa fa-pencil ql-ovv-edit"></i>
+</div>
+
+
+
+<div style="width:100%; float:left; height:auto">
+<div class="ui-widget-header ql-search ql-ovv-users-search-cont">
+  
+  <label class="ql-ovv-user-title">All Users</label>
+  <!-- <i class="fa fa-search" style="margin:4px 4px 0 0"></i> -->
+
+  <!-- <p-dropdown [options]="cities1" [group]="true" class="float-left" ></p-dropdown> -->
+  <input #gb type="text" pInputText size="50" placeholder="Search...">
+  <button type="button" (click)="showDialog()" pButton >  Add User</button>
+  </div>
+  
+
+
+<p-dataTable [value]="items" scrollable="true" [rows]="5" [globalFilter]="gb" #dt >
+  <p-column field="username" header="Users" [sortable]="true"></p-column>
+  <p-column field="emailaddress" header="Email ID" [sortable]="true"></p-column>
+  <p-column field="roles" header="Role" [sortable]="true"></p-column>
+  <p-column field="actions" header="Actions" [sortable]="true"></p-column> 
+</p-dataTable>
+
+
+
+
+
+<p-dialog header="Godfather I" [(visible)]="display" modal="modal" [responsive]="true" [width]="600" [minWidth]="200" [minY]="200">
+  <span>
+      <div class="ui-g ui-fluid">
+          <div class="ui-g-6">
+            <label>Section Name</label>
+              <div class="ui-inputgroup">
+                 
+                  <input type="text" pInputText placeholder="Username">         
+              </div>
+          </div>
+          <div class="ui-g-6">
+              <label>Section Name</label>
+                <div class="ui-inputgroup">
+                   
+                    <input type="text" pInputText placeholder="Username">         
+                </div>
+            </div>
+<div class="ui-g-6">
+  <p-dropdown [options]="cities" placeholder="Select a City"></p-dropdown>
+
+  <!-- <p>Selected City: {{selectedCity ? selectedCity.name : 'none'}}</p> -->
+</div>
+
+          </div>
+
+  </span>
+      <p-footer>
+          <button type="button" pButton icon="fa-check" (click)="display=false" label="Yes"></button>
+          <button type="button" pButton icon="fa-close" (click)="display=false" label="No"></button>
+      </p-footer>
+</p-dialog>

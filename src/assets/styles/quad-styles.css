@@ -4,34 +4,38 @@ body, .ui-widget { font-family: poppins !important; font-size: 14px;}
 .ui-tabview-nav { font-size: 16px;}
 html { overflow: hidden;}
 h1,h2,h3,h4,h5,h6{margin: 0;}
+
 /* Container styles ======================================================================*/
-.quad-container {   width: 100%;
+
+.quad-container {
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;}
+    margin-left: auto;
+}
 
 @media (min-width: 576px) {
     .quad-container {
-      max-width: 540px;
+        max-width: 540px;
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .quad-container {
-      max-width: 720px;
+        max-width: 720px;
     }
-  }
-  
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
     .quad-container {
-      max-width: 960px;
+        max-width: 960px;
     }
-  }
-  
-  @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
     .quad-container {
-      max-width: 1140px;
+        max-width: 1140px;
     }
   }
   /* Container styles ======================================================================*/
@@ -59,46 +63,7 @@ h1,h2,h3,h4,h5,h6{margin: 0;}
 /* -----buttons------ */
 .ui-button-text.ui-clickable{display: none;}
 .ui-button{padding: 5px 10px;border-radius: 0;}
-/* .ui-button.ui-button-secondary{background: #fff;} */
-.ui-button.btn-orange{background: #d02139;border: 1px solid #d02139;}
- /* -------------site spage srart----------------  */
-.siteTable table thead th{text-align: left;}
-.siteTable .search-input{position: relative;padding: 0;}
-.siteTable input{width: 100%; padding: 5px;}
-.siteTable .search-input .search-icon{position: absolute;right: 15px;top: 8px;;}
-.siteTable .ui-widget-header{background:#fff;border: none;padding: 10px 0; }
-.site-buttons .ui-button{width: 140px;}
-.split-button .site-edit .ui-splitbutton .ui-button{vertical-align: middle;}
-.split-button .site-edit .ui-splitbutton .ui-button.ui-widget.ui-state-default.ui-corner-left.ui-button-icon-only{background: transparent;border: none;color: gray;font-size: 16px;margin-bottom: 3px;}
-.split-button .site-edit .ui-splitbutton .ui-splitbutton-menubutton.ui-button.ui-widget.ui-state-default.ui-corner-right.ui-button-icon-only{opacity: 0;position: absolute;left: 0;top: 5px;}
-.split-button .site-edit .ui-splitbutton .ui-menu.ui-menu-dynamic{padding: 0;border-radius: 0;background: #fff;width: 120px;}
-.split-button .site-edit .ui-splitbutton .ui-menu .ui-menuitem{margin:0;}
-.split-button .site-edit .ui-splitbutton .ui-menu .ui-menuitem-link{border-radius: 0;font-size: 16px;}
-  /* Tabview styles============================================= */
-  .ui-tabview .ui-tabview-nav > li.ui-state-active { background-color:#d02139 !important; border:none; transition: ease-in-out .5s; }
-  .ui-state-active a { color: #fff !important;}
-  .ui-tabview .ui-tabview-nav li a { padding: 1rem 1.5rem}
-  .ui-tabview-nav, .ui-tabview { padding: 0px !important;}
 
-
-
-  /* ---------login page ----------------- */
-
-.login {border: 1px solid #d2d2d2;width: 450px;border-radius: 2px;padding: 35px 25px;margin: 0px auto;margin-top: 10%;}
-.login img{width: 150px;margin-bottom: 30px;}
-.forn-group{margin-bottom: 15px;display: block;}
-.login-label{font-size: 16px;font-weight: 500;margin-bottom: 5px;margin-top: 0;}
-.login-submit button{display: block;width: 100%;border-radius: 0;font-size: 20px;}
-.login-submit{margin: 0;}
-.ui-widget .login-input,.login .login-input {width: 100%;height: 42px;}
-.login .logn-forgot{color: #121212;text-decoration: underline;display: inline-block;margin-top: 5px;}
- /* ---------login page ----------------- */
-.ui-tabview-panel { padding: 0px !important; margin-top: 20px; }
-.ui-datatable .ui-datatable-data>tr>td, .ui-datatable .ui-datatable-thead>tr>th{ padding: 1rem .5rem;}
-.ql-search { padding: 1rem 1rem !important;}
-.ui-widget input { height: 34px; padding: 6px 10px; font-family:poppins; border: solid 1px #d2d2d2; }
-
-p-dialog input, .ui-dropdown { width: 100% !important;}
 
 /* overview page---------------------- */
 .categories .ui-breadcrumb{padding: 0;background: none;border: none;margin: 10px 0;}
@@ -117,8 +82,187 @@ p-dialog input, .ui-dropdown { width: 100% !important;}
 .address-edit .ui-button span.ui-button-icon-left {color: #b2b2b2;font-size: 20px;}
 /* overview page---------------------- */
 /* navtabs------------------ */
-.tabs-view .ui-tabview.ui-tabview-top > .ui-tabview-nav{border: 1px solid #d2d2d2;border-radius: 0;}
+.tabs-view .ui-tabview.ui-tabview-top > .ui-tabview-nav{border: 1px solid #d2d2d2;border-radius: 0;padding:0;}
 .tabs-view .ui-tabview.ui-tabview-top > .ui-tabview-nav li{border: none;margin: 0;border-radius: 0;background: #fff;top: 0;text-align: center;border-right: 1px solid #d2d2d2;}
 .tabs-view .ui-tabview.ui-tabview-top > .ui-tabview-nav li span{display: block}
 .tabs-view .ui-tabview.ui-tabview-top > .ui-tabview-nav li .ui-tabview-left-icon{margin-bottom: 5px;}
 /* navtabs------------------ */
+
+/* .ui-button.btn-orange {
+    background: #d02139;
+    border: 1px solid #d02139;
+} */
+
+
+/* -------------site spage srart----------------  */
+/* 
+.siteTable table thead th {
+    text-align: left;
+}
+
+.siteTable .search-input {
+    position: relative;
+    padding: 0;
+}
+
+.siteTable input {
+    width: 100%;
+    padding: 5px;
+}
+
+.siteTable .search-input .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    ;
+}
+
+.siteTable .ui-widget-header {
+    background: #fff;
+    border: none;
+    padding: 10px 0;
+}
+
+.site-buttons .ui-button {
+    width: 140px;
+}
+
+.split-button .site-edit .ui-splitbutton .ui-button {
+    vertical-align: middle;
+}
+
+.split-button .site-edit .ui-splitbutton .ui-button.ui-widget.ui-state-default.ui-corner-left.ui-button-icon-only {
+    background: transparent;
+    border: none;
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.split-button .site-edit .ui-splitbutton .ui-splitbutton-menubutton.ui-button.ui-widget.ui-state-default.ui-corner-right.ui-button-icon-only {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.split-button .site-edit .ui-splitbutton .ui-menu.ui-menu-dynamic {
+    padding: 0;
+    border-radius: 0;
+    background: #fff;
+    width: 120px;
+}
+
+.split-button .site-edit .ui-splitbutton .ui-menu .ui-menuitem {
+    margin: 0;
+}
+
+.split-button .site-edit .ui-splitbutton .ui-menu .ui-menuitem-link {
+    border-radius: 0;
+    font-size: 16px;
+} */
+
+
+/* Tabview styles============================================= */
+/* 
+.ui-tabview .ui-tabview-nav>li.ui-state-active {
+    background-color: #d02139 !important;
+    border: none;
+    transition: ease-in-out .5s;
+}
+
+.ui-state-active a {
+    color: #fff !important;
+}
+
+.ui-tabview .ui-tabview-nav li a {
+    padding: 1rem 1.5rem
+}
+
+.ui-tabview-nav,
+.ui-tabview {
+    padding: 0px !important;
+} */
+
+
+/* ---------login page ----------------- */
+/* 
+.login {
+    border: 1px solid #d2d2d2;
+    width: 450px;
+    border-radius: 2px;
+    padding: 35px 25px;
+    margin: 0px auto;
+    margin-top: 10%;
+}
+
+.login img {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.forn-group {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.login-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.login-submit button {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.login-submit {
+    margin: 0;
+}
+
+.ui-widget .login-input,
+.login .login-input {
+    width: 100%;
+    height: 42px;
+}
+
+.login .logn-forgot {
+    color: #121212;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+} */
+
+
+/* ---------login page ----------------- */
+
+/* .ui-tabview-panel {
+    padding: 0px !important;
+    margin-top: 20px;
+}
+
+.ui-datatable .ui-datatable-data>tr>td,
+.ui-datatable .ui-datatable-thead>tr>th {
+    padding: 1rem .5rem;
+}
+
+.ql-search {
+    padding: 1rem 1rem !important;
+}
+
+.ui-widget input {
+    height: 34px;
+    padding: 6px 10px;
+    font-family: poppins;
+    border: solid 1px #d2d2d2;
+}
+
+p-dialog input,
+.ui-dropdown {
+    width: 100% !important;
+} */
+
