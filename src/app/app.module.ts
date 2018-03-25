@@ -25,11 +25,14 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import {TabViewModule} from 'primeng/tabview';
 import {DataTableModule} from 'primeng/datatable';
-
+import {BreadcrumbModule} from 'primeng/breadcrumb';
+import {StepsModule} from 'primeng/steps';
+import {MenuItem} from 'primeng/api';
 import { SitesComponent } from './sites/sites.component';
 import { SectionsComponent } from './sections/sections.component';
 import { RouterModule } from '@angular/router';
 import { OverviewComponent } from './overview/overview.component';
+
 import { TenantsComponent } from './tenants/tenants.component';
 import { MetersComponent } from './meters/meters.component';
 
@@ -45,13 +48,16 @@ import { MetersComponent } from './meters/meters.component';
     SitesComponent,
     SectionsComponent,
     OverviewComponent,
+
     TenantsComponent,
     MetersComponent
+
+
   ],
   imports: [
 
     BrowserModule,BrowserAnimationsModule,RouterModule.forRoot([]),
-    MenubarModule,TableModule,AccordionModule,ButtonModule,DataTableModule,
+    MenubarModule,TableModule,AccordionModule,ButtonModule,DataTableModule,BreadcrumbModule,
     TabViewModule,InputTextModule,DialogModule,FileUploadModule,DropdownModule,SplitButtonModule
 
   ],
