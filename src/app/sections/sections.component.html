@@ -54,5 +54,13 @@
     <p-column field="color" header="Utility Type" [sortable]="true"></p-column>
     <p-column field="color" header="Rate Structure" [sortable]="true"></p-column>
     <p-column field="color" header="Units Assigned" [sortable]="true"></p-column>
+    <p-column styleClass="col-button">
+        <ng-template pTemplate="header">
+            <!-- <button type="button" pButton icon="fa-refresh"></button> -->
+        </ng-template>
+        <ng-template let-car="rowData" pTemplate="body">
+            <p-splitButton class="site-edit float-right" icon="far fa-ellipsis-v" [model]="edit"></p-splitButton>
+        </ng-template>
+    </p-column>
 </p-dataTable>
 

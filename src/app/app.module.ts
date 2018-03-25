@@ -35,6 +35,7 @@ import { OverviewComponent } from './overview/overview.component';
 
 import { TenantsComponent } from './tenants/tenants.component';
 import { MetersComponent } from './meters/meters.component';
+import { UnitPageComponent } from './unit-page/unit-page.component';
 
 
 
@@ -50,7 +51,8 @@ import { MetersComponent } from './meters/meters.component';
     OverviewComponent,
 
     TenantsComponent,
-    MetersComponent
+    MetersComponent,
+    UnitPageComponent
 
 
   ],
