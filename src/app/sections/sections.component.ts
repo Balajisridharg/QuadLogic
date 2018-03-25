@@ -12,7 +12,7 @@ export class SectionsComponent implements OnInit {
   cities: any[];
   display: boolean = false; 
   selectedCity: any;
- 
+  edit: any[];
 
   ngOnInit() {
     this.items = [
@@ -36,6 +36,17 @@ export class SectionsComponent implements OnInit {
     {label:'London', value:{id:3, name: 'London', code: 'LDN'}},
     {label:'Istanbul', value:{id:4, name: 'Istanbul', code: 'IST'}},
     {label:'Paris', value:{id:5, name: 'Paris', code: 'PRS'}}];
+
+    this.edit = [
+      {label: 'Edit', icon: 'far fa-pencil', command: () => {
+              
+      }},
+      {label: 'Delete', icon: 'far fa-trash', command: () => {
+          
+      }},
+      // {label: 'Angular.io', icon: 'fa-link', url: 'http://angular.io'},
+      // {label: 'Theming', icon: 'fa-paint-brush', routerLink: ['/theming']}
+  ];
   }
 
  

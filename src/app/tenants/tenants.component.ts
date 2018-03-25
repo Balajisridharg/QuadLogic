@@ -10,7 +10,7 @@ export class TenantsComponent implements OnInit {
   items: any[];
   display: boolean = false;
   cities: any[];
-
+  edit:any[];
   ngOnInit() {
     this.items = [
                 {"username": "Olivia Elle", "emailaddress": "oliviaelle@gmail.com",  "units": "2156", "type": "Resident"}, 
@@ -30,7 +30,16 @@ export class TenantsComponent implements OnInit {
       {name: 'Paris', code: 'PRS'}
   ];
 
-   
+  this.edit = [
+    {label: 'Edit', icon: 'far fa-pencil', command: () => {
+            
+    }},
+    {label: 'Delete', icon: 'far fa-trash', command: () => {
+        
+    }},
+    // {label: 'Angular.io', icon: 'fa-link', url: 'http://angular.io'},
+    // {label: 'Theming', icon: 'fa-paint-brush', routerLink: ['/theming']}
+];
 
 
 }

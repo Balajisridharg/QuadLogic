@@ -10,7 +10,7 @@ export class MetersComponent implements OnInit {
   items: any[];
   display: boolean = false;
   cities: any[];
-
+edit: any[];
   ngOnInit() {
     this.items = [
                 {"virtual": "VR55333", "meterid": "234345677",  "multiplier": "1.0", "units": "4564", "utility":"Electricity"}, 
@@ -30,7 +30,16 @@ export class MetersComponent implements OnInit {
       {name: 'Paris', code: 'PRS'}
   ];
 
-   
+  this.edit = [
+    {label: 'Edit', icon: 'far fa-pencil', command: () => {
+            
+    }},
+    {label: 'Delete', icon: 'far fa-trash', command: () => {
+        
+    }},
+    // {label: 'Angular.io', icon: 'fa-link', url: 'http://angular.io'},
+    // {label: 'Theming', icon: 'fa-paint-brush', routerLink: ['/theming']}
+];
 
 
 }
