@@ -26,8 +26,8 @@
 
     </span>
         <p-footer>
-            <button type="button" pButton icon="fa-check" (click)="display=false" label="Yes"></button>
-            <button type="button" pButton icon="fa-close" (click)="display=false" label="No"></button>
+            <button type="button" pButton (click)="display=false" label="Yes">Yes</button>
+            <button type="button" pButton (click)="display=false" label="No">No</button>
         </p-footer>
 </p-dialog>
 
@@ -42,7 +42,7 @@
    
     <!-- <button pButton type="button" label="Click" ></button> -->
     <div style="float:right;">
-    <p-fileUpload mode="basic" name="demo[]"   maxFileSize="1000000" (onUpload)="onBasicUpload($event)"></p-fileUpload>
+    <p-fileUpload mode="basic" name="demo[]" maxFileSize="1000000" (onUpload)="onBasicUpload($event)"></p-fileUpload>
     <button type="button" (click)="showDialog()" pButton   label="Add Section">Add Section</button>
   </div>
 </div>

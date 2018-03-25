@@ -1,3 +1,4 @@
+html {overflow: scroll !important;}
 body,
 .ui-widget {
     font-family: poppins !important;
@@ -104,7 +105,7 @@ h6 {
 app-mid-body {
     width: 100%;
     float: left;
-    height: 300px;
+    height: auto;
     margin-top: 101px;
 }
 
@@ -249,9 +250,11 @@ app-mid-body {
     border-radius: 0;
     background: #fff;
     top: 0;
-    text-align: center;
+    text-align: center; 
     border-right: 1px solid #d2d2d2;
+    
 }
+.ui-tabview-nav>li, .ui-state-active{ transition:ease-in-out all .5s}
 
 .tabs-view .ui-tabview.ui-tabview-top>.ui-tabview-nav li span {
     display: block
@@ -351,11 +354,10 @@ app-mid-body {
 /* Tabview styles============================================= */
 
 
-/* 
+
 .ui-tabview .ui-tabview-nav>li.ui-state-active {
     background-color: #d02139 !important;
-    border: none;
-    transition: ease-in-out .5s;
+    border: none; 
 }
 
 .ui-state-active a {
@@ -369,13 +371,13 @@ app-mid-body {
 .ui-tabview-nav,
 .ui-tabview {
     padding: 0px !important;
-} */
+}
 
 
 /* ---------login page ----------------- */
 
 
-/* 
+
 .login {
     border: 1px solid #d2d2d2;
     width: 450px;
@@ -424,13 +426,13 @@ app-mid-body {
     text-decoration: underline;
     display: inline-block;
     margin-top: 5px;
-} */
+}
 
 
 /* ---------login page ----------------- */
 
 
-/* .ui-tabview-panel {
+.ui-tabview-panel {
     padding: 0px !important;
     margin-top: 20px;
 }
@@ -454,7 +456,7 @@ app-mid-body {
 p-dialog input,
 .ui-dropdown {
     width: 100% !important;
-} */
+}
 
 
 /*meterPage--------------------*/
@@ -463,3 +465,12 @@ p-dialog input,
     padding: 10px 0;
 }
 .ui-widget-header { width: 100%;}
+
+
+/* Sub navigation */
+.ui-tabview .ui-tabview-nav li a { width: 118px;}
+.ui-datatable th.ui-state-active { color: #555555; background-color: #ebedf0;}
+
+/* buttons */
+.ui-widget-header .ui-button, .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button { border: solid 1px #d2d2d2; background-color:#fff; color:#333; font-weight: 500;}
+.ui-widget-header .ui-button:hover, .ui-widget-content .ui-button:hover, .ui-widget.ui-button:hover, .ui-button:hover { background-color: #d02139 !important; color:#fff !important; border-color:#d02139 !important; transition: ease-in-out all .5s;}

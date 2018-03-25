@@ -17,7 +17,7 @@
 
   <!-- <p-dropdown [options]="cities1" [group]="true" class="float-left" ></p-dropdown> -->
   <input #gb type="text" pInputText size="50" placeholder="Search...">
-  <button type="button" (click)="showDialog()" pButton >  Add User</button>
+  <button type="button"  (click)="showDialog()" pButton >  Add User</button>
   </div>
   
 
@@ -60,7 +60,7 @@
 
   </span>
       <p-footer>
-          <button type="button" pButton icon="fa-check" (click)="display=false" label="Yes"></button>
-          <button type="button" pButton icon="fa-close" (click)="display=false" label="No"></button>
+          <button type="button" pButton   (click)="display=false" label="Yes">Yes</button>
+          <button type="button" pButton  (click)="display=false" label="No">No</button>
       </p-footer>
 </p-dialog>
