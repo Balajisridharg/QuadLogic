@@ -1,22 +1,22 @@
 <p-breadcrumb class="float-right categories" [model]="items" [home]="home"></p-breadcrumb>
 <div class="clear"></div>
 <h5 class="page-heading">parkside</h5>
-<div class="ui-g-nopad tabs-view"> 
+<div class="ui-g-nopad tabs-view">
     <p-tabView>
         <p-tabPanel header="Overview" leftIcon="fa-book">
-           <app-overview></app-overview>
+            <app-overview></app-overview>
         </p-tabPanel>
         <p-tabPanel header="Sections" leftIcon="fa-building">
             <app-sections></app-sections>
         </p-tabPanel>
         <p-tabPanel header="Units" leftIcon="fa-home">
-            Content 3    
+            Content 3
         </p-tabPanel>
         <p-tabPanel header="Meters" leftIcon="fa-dashboard">
-            Content 4    
+            <app-meter-page></app-meter-page>
         </p-tabPanel>
         <p-tabPanel header="Tanants" leftIcon="fa-users">
-            Content 5    
+            Content 5
         </p-tabPanel>
     </p-tabView>
 </div>

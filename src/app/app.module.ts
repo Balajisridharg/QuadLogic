@@ -32,6 +32,7 @@ import { SitesComponent } from './sites/sites.component';
 import { SectionsComponent } from './sections/sections.component';
 import { RouterModule } from '@angular/router';
 import { OverviewComponent } from './overview/overview.component';
+import { MeterPageComponent } from './meter-page/meter-page.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { OverviewComponent } from './overview/overview.component';
     LoginPageComponent,
     SitesComponent,
     SectionsComponent,
-    OverviewComponent
+    OverviewComponent,
+    MeterPageComponent
   ],
   imports: [
 
