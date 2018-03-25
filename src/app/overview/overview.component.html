@@ -6,9 +6,6 @@
 </div>
 <i class="fa fa-pencil ql-ovv-edit"></i>
 </div>
-
-
-
 <div style="width:100%; float:left; height:auto">
 <div class="ui-widget-header ql-search ql-ovv-users-search-cont">
   
@@ -27,6 +24,14 @@
   <p-column field="emailaddress" header="Email ID" [sortable]="true"></p-column>
   <p-column field="roles" header="Role" [sortable]="true"></p-column>
   <p-column field="actions" header="Actions" [sortable]="true"></p-column> 
+  <p-column styleClass="col-button">
+    <ng-template pTemplate="header">
+        <!-- <button type="button" pButton icon="fa-refresh"></button> -->
+    </ng-template>
+    <ng-template let-car="rowData" pTemplate="body">
+        <p-splitButton class="site-edit float-right" icon="far fa-ellipsis-v" [model]="edit"></p-splitButton>
+    </ng-template>
+</p-column>
 </p-dataTable>
 
 </div>
